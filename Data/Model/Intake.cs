@@ -9,10 +9,10 @@ namespace Godwit.Common.Data.Model {
         public virtual Ingredient Ingredient { get; set; }
         public MeasurementUnit MeasurementUnit { get; set; }
         public float SizeTaken { get; set; }
-        public short Calories { get; set; }
-        public short Carbs { get; set; }
-        public short Fat { get; set; }
-        public short Protein { get; set; }
+        public float Calories { get; set; }
+        public float Carbs { get; set; }
+        public float Fat { get; set; }
+        public float Protein { get; set; }
         public Instant Time { get; set; }
         public Instant CreatedOn { get; set; }
         public Instant? UpdatedOn { get; set; }

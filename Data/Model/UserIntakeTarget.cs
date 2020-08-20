@@ -11,17 +11,17 @@ namespace Godwit.Common.Data.Model {
 
         public string UserId { get; set; }
         public virtual User User { get; set; }
-        public short Height { get; set; }
-        public short FatPercentage { get; set; }
+        public float Height { get; set; }
+        public float FatPercentage { get; set; }
         public ActivityLevel ActivityLevel { get; set; }
         public DeficitGoal Goal { get; set; }
-        public short DeficitPercentage { get; set; }
-        public short NetCarbsPercentage { get; set; }
+        public float DeficitPercentage { get; set; }
+        public float NetCarbsPercentage { get; set; }
         public float ProteinTaken { get; set; } // value >0.6 && value <=1.2 per gram weight.
-        public short? TotalCaloriesIntake { get; set; }
-        public short? TotalFatIntake { get; set; }
-        public short? TotalCarbsIntake { get; set; }
-        public short? TotalProteinIntake { get; set; }
+        public float? TotalCaloriesIntake { get; set; }
+        public float? TotalFatIntake { get; set; }
+        public float? TotalCarbsIntake { get; set; }
+        public float? TotalProteinIntake { get; set; }
         public Instant CreatedOn { get; set; }
         public Instant? UpdatedOn { get; set; }
         public virtual ICollection<Intake> Intakes { get; set; }
